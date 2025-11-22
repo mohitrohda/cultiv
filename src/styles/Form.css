@@ -1,0 +1,184 @@
+/* Agricultural Form Styles */
+.agri-form-container {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+  position: relative;
+}
+
+.agri-form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(104, 159, 56, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(230, 126, 34, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Form Header */
+.agri-form-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.agri-form-header h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.agri-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Agricultural Form Card */
+.agri-form {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 3rem 2.5rem;
+  border-radius: 24px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 600px;
+  animation: growIn 0.6s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Form Groups */
+.agri-form-group {
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.agri-form-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-green);
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.agri-form-group input,
+.agri-form-group select,
+.agri-form-group textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 2px solid #e8f5e8;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: var(--light-beige);
+  font-family: inherit;
+  color: var(--text-dark);
+}
+
+.agri-form-group input:focus,
+.agri-form-group select:focus,
+.agri-form-group textarea:focus {
+  outline: none;
+  border-color: var(--leaf-green);
+  background: var(--white);
+  box-shadow: 
+    0 0 0 3px rgba(104, 159, 56, 0.1),
+    0 4px 12px rgba(104, 159, 56, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Agricultural Submit Button */
+.agri-submit-button {
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent-orange), #d35400);
+  color: var(--white);
+  padding: 1.2rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  font-family: inherit;
+}
+
+.agri-submit-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.agri-submit-button:hover::before {
+  left: 100%;
+}
+
+.agri-submit-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 12px 25px rgba(230, 126, 34, 0.4),
+    0 0 0 1px rgba(230, 126, 34, 0.1);
+}
+
+.agri-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive Form Design */
+@media (max-width: 768px) {
+  .agri-form-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .agri-form {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+  
+  .agri-form-header h1 {
+    font-size: 2rem;
+  }
+  
+  .agri-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .agri-form {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+  
+  .agri-form-group input,
+  .agri-form-group select,
+  .agri-form-group textarea {
+    padding: 0.8rem 1rem;
+  }
+}
