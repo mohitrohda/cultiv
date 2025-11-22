@@ -2,14 +2,14 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
-// actual Firebase config
+// Your Firebase config (it will not work)
 const firebaseConfig = {
-  apiKey: "AIzaSyDMyzG9Y29a8R7WPc-dSfCwBAsM4heIodg",
-  authDomain: "cultiv-app-f4d8f.firebaseapp.com",
-  projectId: "cultiv-app-f4d8f",
-  storageBucket: "cultiv-app-f4d8f.firebasestorage.app",
-  messagingSenderId: "447167983676",
-  appId: "1:447167983676:web:be1d5ba36fa560c8b6d339"
+  apiKey: "your-api-key",
+  authDomain: "your-project.firebaseapp.com",
+  projectId: "your-project-id",
+  storageBucket: "your-project.appspot.com",
+  messagingSenderId: "your-sender-id",
+  appId: "your-app-id"
 };
 
 // Initialize Firebase
