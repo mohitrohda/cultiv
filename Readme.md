@@ -34,17 +34,24 @@ Cultiv is an integrated digital platform designed for modern farmers. It blends 
 
 ## 📁 Project Structure  
 /cultiv
+
 ├── backend/ # Datasets + training scripts for AI/ML features
 ├── src/ 
 ├── index.html
-└── README.md # 
+└── README.md 
+
 
 src/
 ├── components/         # Reusable UI components
+
 ├── contexts/           # React contexts (Language, Auth)
+
 ├── pages/              # Main application pages
+
 ├── services/           # Firebase and API services
+
 ├── styles/             # CSS modules and themes
+
 └── assets/             # Images and static files
 
 
