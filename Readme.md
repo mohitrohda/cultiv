@@ -1,5 +1,7 @@
 # Cultiv – AI-Powered Farming Platform
 
+![App Screenshot](src/assets/banner.png)
+
 ## 🚜 Project Summary  
 Cultiv is an integrated digital platform designed for modern farmers. It blends artificial intelligence, machine learning, and agricultural operations into one accessible solution — empowering farmers to:  
 - Identify the **optimal crop to grow next**, based on soil, weather, and market data.  
